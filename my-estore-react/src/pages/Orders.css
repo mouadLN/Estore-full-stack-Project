@@ -1,0 +1,107 @@
+.orders-page {
+  padding: calc(var(--navbar-height) + var(--space-2xl)) 0 var(--space-4xl);
+}
+
+.orders-page__title {
+  font-size: var(--fs-2xl);
+  margin-bottom: var(--space-2xl);
+}
+
+.orders-empty {
+  text-align: center;
+  padding: var(--space-4xl);
+  background: var(--clr-bg-card);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--clr-border-light);
+}
+
+.orders-empty__icon {
+  font-size: 4rem;
+  display: block;
+  margin-bottom: var(--space-lg);
+  opacity: 0.5;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.order-card {
+  background: var(--clr-bg-card);
+  border: 1px solid var(--clr-border-light);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  transition: all var(--transition-fast);
+}
+
+.order-card:hover {
+  box-shadow: var(--shadow-sm);
+  border-color: var(--clr-primary-light);
+}
+
+.order-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-lg) var(--space-xl);
+  background: var(--clr-bg-section);
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.order-card__id {
+  font-weight: var(--fw-semibold);
+  margin-right: var(--space-md);
+}
+
+.order-card__date {
+  font-size: var(--fs-sm);
+  color: var(--clr-text-muted);
+}
+
+.order-card__items {
+  padding: var(--space-lg) var(--space-xl);
+  border-bottom: 1px solid var(--clr-border-light);
+}
+
+.order-card__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-sm) 0;
+  font-size: var(--fs-sm);
+}
+
+.order-card__item-name {
+  flex: 1;
+  color: var(--clr-text);
+}
+
+.order-card__item-qty {
+  color: var(--clr-text-muted);
+}
+
+.order-card__item-price {
+  font-weight: var(--fw-semibold);
+  color: var(--clr-primary-dark);
+  min-width: 70px;
+  text-align: right;
+}
+
+.order-card__footer {
+  padding: var(--space-md) var(--space-xl);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.order-card__total {
+  font-size: var(--fs-md);
+  color: var(--clr-text);
+}
+
+.order-card__total strong {
+  color: var(--clr-primary-dark);
+  font-size: var(--fs-lg);
+}

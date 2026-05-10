@@ -1,0 +1,95 @@
+/* ═══ AUTH PAGES (Login + Register) ═══ */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: calc(var(--navbar-height) + var(--space-2xl)) var(--space-xl) var(--space-2xl);
+  background: var(--grad-hero);
+}
+
+.auth-card {
+  background: var(--clr-bg-card);
+  border-radius: var(--radius-xl);
+  padding: var(--space-3xl);
+  width: 100%;
+  max-width: 480px;
+  box-shadow: var(--shadow-xl);
+  border: 1px solid var(--clr-border-light);
+}
+
+.auth-card__header {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.auth-card__icon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: var(--space-md);
+}
+
+.auth-card__title {
+  font-size: var(--fs-2xl);
+  font-weight: var(--fw-bold);
+  color: var(--clr-text);
+  margin-bottom: var(--space-xs);
+}
+
+.auth-card__subtitle {
+  color: var(--clr-text-muted);
+  font-size: var(--fs-sm);
+}
+
+/* Form */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.form-label {
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-semibold);
+  color: var(--clr-text);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.auth-form__submit {
+  width: 100%;
+  margin-top: var(--space-sm);
+  padding: 0.95rem;
+  font-size: var(--fs-md);
+}
+
+.auth-card__footer {
+  text-align: center;
+  margin-top: var(--space-xl);
+  font-size: var(--fs-sm);
+  color: var(--clr-text-muted);
+}
+
+.auth-card__link {
+  color: var(--clr-primary-dark);
+  font-weight: var(--fw-semibold);
+}
+
+.auth-card__link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+  .auth-card { padding: var(--space-xl); }
+  .form-row { grid-template-columns: 1fr; }
+}
