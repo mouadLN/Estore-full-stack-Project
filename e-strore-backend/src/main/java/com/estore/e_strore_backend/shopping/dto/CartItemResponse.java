@@ -10,4 +10,5 @@ public class CartItemResponse {
     private Double productPrice;
     private Integer quantity;
     private Double subtotal;
+    private String imageUrl;
 }

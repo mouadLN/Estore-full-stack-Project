@@ -59,13 +59,13 @@ export default function Orders() {
                       <div className="order-card__item" key={j}>
                         <span className="order-card__item-name">{item.productName || item.name || 'Product'}</span>
                         <span className="order-card__item-qty">×{item.quantity || 1}</span>
-                        <span className="order-card__item-price">${(item.price || 0).toFixed(2)}</span>
+                        <span className="order-card__item-price">{(item.price || 0).toFixed(2)} DH</span>
                       </div>
                     ))}
                   </div>
                 )}
                 <div className="order-card__footer">
-                  <span className="order-card__total">Total: <strong>${(order.totalAmount || order.total || 0).toFixed(2)}</strong></span>
+                  <span className="order-card__total">Total: <strong>{(order.totalAmount || order.total || 0).toFixed(2)} DH</strong></span>
                 </div>
               </div>
             ))}

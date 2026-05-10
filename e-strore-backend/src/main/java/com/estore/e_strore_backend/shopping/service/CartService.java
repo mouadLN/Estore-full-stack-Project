@@ -107,6 +107,7 @@ public class CartService {
             itemResponse.setProductName(item.getProduct().getName());
             itemResponse.setProductPrice(item.getPrice());
             itemResponse.setQuantity(item.getQuantity());
+            itemResponse.setImageUrl(item.getProduct().getImageUrl());
 
             double subtotal = item.getPrice() * item.getQuantity();
             itemResponse.setSubtotal(subtotal);
